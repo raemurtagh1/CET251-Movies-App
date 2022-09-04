@@ -1,0 +1,28 @@
+[
+    {
+        "Name1": "The Dark Knight",
+        "Year1": "2008",
+        "Rating1": "9.0",
+        "Description1": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+
+        "Name2": "The Lion King",
+        "Year2": "1995",
+        "Rating2": "8.5",
+        "Description2": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+
+        "Name3": "Raiders of the Lost Ark",
+        "Year3": "1981",
+        "Rating3": "8.4",
+        "Description3": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler's Nazis can obtain its awesome powers.",
+
+        "Name4": "Joker",
+        "Year4": "2019",
+        "Rating4": "8.4",
+        "Description4": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+
+        "Name5": "Finding Nemo",
+        "Year5": "2003",
+        "Rating5": "8.1",
+        "Description5": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home."
+    }
+]

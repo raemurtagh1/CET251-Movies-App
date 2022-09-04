@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets initial viewport load and disables zooming -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes the app chrome-less once bookmarked to the phone screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Title of the app -->
+    <title>Movie Rating App</title>
+
+    <!-- Including the Ratchet CSS stylesheet -->
+    <link href="ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
+
+    <!-- Including the Ratchet JavaScript file -->
+    <script src="ratchet-v2.0.2/js/ratchet.js"></script>
+    
+</head>
+<body>
+    <!-- Adding a title to the top of the app-->
+    <header class="bar bar-nav">
+    <h1 class="title">Top rated movies - March 2021</h1>
+    </header>
+
+    <!-- Adding a table view list for each movie-->
+    <div class="content" style="padding-top: 28px;">
+    <ul class="table-view">
+
+        <!-- Movie 1 - List box -->
+        <li class="table-view-cell media" onclick="window.location.href='Movie-no1-DetailPage.html'">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="Images/TheDarkKnight.jpg">
+            <div class="media-body">
+              The Dark Knight - 2008
+            </div>
+          </a>
+        </li>
+
+        <!-- Movie 2 - List box -->
+        <li class="table-view-cell media" onclick="window.location.href='Movie-no2-DetailPage.html'">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="Images/TheLionKing.jpg">
+            <div class="media-body">
+              The Lion King - 1995
+            </div>
+          </a>
+        </li>
+
+        <!-- Movie 3 - List box -->
+        <li class="table-view-cell media" onclick="window.location.href='Movie-no3-DetailPage.html'">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="Images/RaidersOfTheLostArk.jpg">
+            <div class="media-body">
+              Raiders of the Lost Ark - 1981
+            </div>
+          </a>
+        </li>
+
+        <!-- Movie 4 - List box -->
+        <li class="table-view-cell media" onclick="window.location.href='Movie-no4-DetailPage.html'">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="Images/Joker.jpg">
+            <div class="media-body">
+              Joker - 2019
+            </div>
+          </a>
+        </li>
+
+        <!-- Movie 5 - List box -->
+        <li class="table-view-cell media" onclick="window.location.href='Movie-no5-DetailPage.html'">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="Images/FindingNemo.jpg">
+            <div class="media-body">
+              Finding Nemo - 2003
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+</body>
+</html>

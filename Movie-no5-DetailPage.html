@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets initial viewport load and disables zooming -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes the app chrome-less once bookmarked to the phone screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Title of the app -->
+    <title>Finding Nemo</title>
+
+    <!-- Including the Ratchet CSS stylesheet -->
+    <link href="ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
+
+    <!-- Including the Ratchet JavaScript file -->
+    <script src="ratchet-v2.0.2/js/ratchet.js"></script>
+
+    <!-- Including JQuery-->
+    <script src= "https://code.jquery.com/jquery-3.5.1.js"> </script> 
+
+    <!-- Adding styles to the image of the movie poster-->
+    <style>
+        img
+        {
+            width: 330px;
+            height: 330px;
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-top: 20px; 
+            border: 3px solid black;
+        }
+    </style>
+
+    <!-- Adding styles to the details of the movie-->
+    <style>
+        #myData
+        {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 15px;
+            line-height: 1.2;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Adding a title to the top of the app-->
+    <header class="bar bar-nav">
+    <a class="icon icon-left-nav pull-left" onclick="window.location.href='index.html'"></a>
+    <h1 class="title">Finding Nemo</h1>
+    </header>
+
+    <!-- Adding a table view list for each movie-->
+    <div class="content">
+        <!-- Adding an image of the movie poster to the detail page-->
+        <img src="/images/MoviePoster5.png" alt="Finding Nemo Movie poster">
+
+    <!-- Creating a div tag to allow the data to appear as text-->
+    <div id="myData"></div>
+    <script>
+        $(document).ready(function () { 
+          
+        // Fetching data from a JSON file
+        $.getJSON("movies.json", function (data) 
+        { 
+            var movies = '';
+                
+            // Adding each piece of detail of the movie from the JSON file  
+            $.each(data, function (key, value) 
+            { 
+                movies += 'Name - ' + value.Name5 + '<br>' + 'Year - ' + value.Year5 + '<br>' + 
+                'Rating - ' + value.Rating5 + '<br>' + 'Description - ' + value.Description5 + '<br>';
+            }); 
+        
+            // Appending the data to the document  
+            $('#myData').append(movies); 
+        }); 
+        }); 
+    </script>
+    </div>
+    
+</body>
+</html>
